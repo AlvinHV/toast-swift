@@ -9,8 +9,8 @@ import Foundation
 import UIKit
 
 public class TextToastView : UIStackView {
-    private lazy var titleLabel: UILabel = {
-        UILabel()
+    private lazy var titleLabel: PaddingLabel = {
+        PaddingLabel()
     }()
     
     private lazy var subtitleLabel: UILabel = {
@@ -57,6 +57,6 @@ public class TextToastView : UIStackView {
     private func commonInit() {
         axis = .vertical
         alignment = .center
-        distribution = .fillEqually
+        distribution = .fill
     }
 }
